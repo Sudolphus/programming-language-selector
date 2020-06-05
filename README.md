@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a quiz with internal logic that helps a person determine which programming language they should learn_
+_This is a quiz with internal logic that helps a person determine which programming language they should learn. Features branching, and a custom style sheet._
 
 ## Setup/Installation Requirements
 
