@@ -17,6 +17,8 @@ $(document).ready(function() {
     const q5Input = parseInt($("input[name='q5']:checked").val());
     const q6Input = parseInt($("input[name='q6']:checked").val());
     const q7Input = parseInt($("input[name='q7']:checked").val());
+    const q8Input = parseInt($("input[name='q8']:checked").val());
+    const q9Input = parseInt($("input[name='q9']:checked").val());
 
     if (q1Input === 1) {
       cplus += 1;
@@ -76,6 +78,8 @@ $(document).ready(function() {
       csharp +=1;
       java +=2;
     } else if (q3Input === 5) {
+      cplus += 1;
+    } else if (q3Input === 6) {
       java +=1;
     }
 
@@ -109,5 +113,22 @@ $(document).ready(function() {
       java += 1;
     }
 
+    if (q8Input === 1) {
+      php += 1;
+      python += 1;
+      ruby += 1;
+    } else if (q8Input === 2) {
+      java += 1;
+    }
+
+    if (q9Input === 1) {
+      python += 1;
+    } else if (q9Input === 2) {
+      java += 1;
+    } else if (q9Input === 3) {
+      cplus += 1;
+    }
+
+    
   });
 })
