@@ -15,6 +15,8 @@ $(document).ready(function() {
     const q3Input = parseInt($("input[name='q3']:checked").val());
     const q4Input = parseInt($("input[name='q4']:checked").val());
     const q5Input = parseInt($("input[name='q5']:checked").val());
+    const q6Input = parseInt($("input[name='q6']:checked").val());
+    const q7Input = parseInt($("input[name='q7']:checked").val());
 
     if (q1Input === 1) {
       cplus += 1;
@@ -95,6 +97,17 @@ $(document).ready(function() {
       ruby += 1;
     }
 
-    
+    if (q6Input === 1) {
+      csharp += 1;
+    } else if (q6Input === 2) {
+      java += 1;
+    }
+
+    if (q7Input === 1) {
+      objectiveC += 1;
+    } else if (q7Input === 2) {
+      java += 1;
+    }
+
   });
 })
