@@ -5,3 +5,12 @@ body {
 .page-header {
   text-align: center;
 }
+
+.question {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.radio {
+  margin-bottom: 15px;
+}

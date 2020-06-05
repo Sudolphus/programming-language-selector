@@ -14,12 +14,23 @@
         <small>A quiz to guide your programming language of choice!</small>
       </div>
       <form>
-          <p>Why do you want to learn programming?</p>
           <div class="radio">
-            <label><input type="radio" name="q1" value="1">Make Money</label>
-            <label><input type="radio" name="q1" value="2">Make Money</label>
+            <p class="question">Why do you want to learn programming?</p>
+            <label><input type="radio" name="q1" value="1">Make money</label>
+            <label><input type="radio" name="q1" value="2">Just for fun</label>
+            <label><input type="radio" name="q1" value="2">I'm interested</label>
+            <label><input type="radio" name="q1" value="2">To improve myself</label>
+            <label><input type="radio" name="q1" value="3">For my kids</label>
+            <label><input type="radio" name="q1" value="3">I don't know, just pick one</label>
           </div>
 
+          <div class="radio">
+            <p class="question">Would you rather work a job or start your own company?</p>
+            <label><input type="radio" name="q2" value="1">Work a job</label>
+            <label><input type="radio" name="q2" value="2">Start my own</label>
+          </div>
+
+          
         <button class="btn" type="submit" id="submit">Submit Answers</button>
         <button class="btn" type="reset" id="reset">Reset Quiz</button>
       </form>
