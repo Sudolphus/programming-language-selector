@@ -56,15 +56,25 @@ $(document).ready(function() {
     }
 
     if (q3Input === 1) {
-      c += 
-      cplus += 
-      csharp += 
-      java += 
-      javascript += 
-      objectiveC += 
-      php += 
-      python += 
-      ruby += 
+      csharp += 1;
+      objectiveC += 1;
+      python += 2;
+    } else if (q3Input === 2) {
+      csharp += 1;
+      javascript += 2;
+      php += 1;
+      python += 3;
+      ruby += 1;
+    } else if (q3Input === 3) {
+      java += 1;
+      objectiveC += 1;
+    } else if (q3Input === 4) {
+      csharp +=1;
+      java +=2;
+    } else if (q3Input === 5) {
+      java +=1;
     }
+
+
   });
 })
