@@ -44,6 +44,8 @@ $(document).ready(function() {
       ruby += 1;
     } else if (q1Input === 5 || q1Input === 6) {
       python += 1
+    } else {
+      $("#q1error").show();
     }
 
     if (q2Input === 1) { 
@@ -62,6 +64,8 @@ $(document).ready(function() {
       php += 1;
       python += 1;
       ruby += 1;
+    } else {
+      $("#q2error").show();
     }
 
     if (q3Input === 1) {
@@ -84,6 +88,8 @@ $(document).ready(function() {
       cplus += 1;
     } else if (q3Input === 6) {
       java +=1;
+    } else {
+      $("#q3error").show();
     }
 
     if (q4Input === 1) {
@@ -92,6 +98,8 @@ $(document).ready(function() {
       objectiveC += 1;
     } else if (q4Input === 3 || q4Input === 4) {
       python += 1;
+    } else {
+      $("#q4error").show();
     }
 
     if (q5Input === 1) {
@@ -102,18 +110,24 @@ $(document).ready(function() {
       php += 1;
       python += 3;
       ruby += 1;
+    } else {
+      $("#q5error").show();
     }
 
     if (q6Input === 1) {
       csharp += 1;
     } else if (q6Input === 2) {
       java += 1;
+    } else {
+      $("#q6error").show();
     }
 
     if (q7Input === 1) {
       objectiveC += 1;
     } else if (q7Input === 2) {
       java += 1;
+    } else {
+      $("#q7error").show();
     }
 
     if (q8Input === 1) {
@@ -122,6 +136,8 @@ $(document).ready(function() {
       ruby += 1;
     } else if (q8Input === 2) {
       java += 1;
+    } else {
+      $("#q8error").show();
     }
 
     if (q9Input === 1) {
@@ -130,6 +146,8 @@ $(document).ready(function() {
       java += 1;
     } else if (q9Input === 3) {
       cplus += 1;
+    } else {
+      $("#q9error").show();
     }
 
     if (q10Input === 1) {
@@ -146,12 +164,16 @@ $(document).ready(function() {
       cplus += 1;
       java += 1;
       python += 2;
+    } else {
+      $("#q10error").show();
     }
 
     if (q11Input === 1) {
       java += 1;
     } else if (q11Input === 2) {
       c += 1;
+    } else {
+      $("#q11error").show();
     }
 
     if (q12Input === 1) {
@@ -160,6 +182,8 @@ $(document).ready(function() {
       ruby += 1;
     } else if (q12Input === 3) {
       php += 1;
+    } else {
+      $("#q12error").show();
     }
     
     const winner = maximum(c, cplus, csharp, java, javascript, objectiveC, php, python, ruby)
@@ -172,24 +196,29 @@ $(document).ready(function() {
     $("#php").hide();
     $("#python").hide();
     $("#ruby").hide();
-    if (winner === c) {
-      $("#c").show();
-    } else if (winner === cplus) {
-      $("#cplus").show();
-    } else if (winner === csharp) {
-      $("#csharp").show();
-    } else if (winner === java) {
-      $("#java").show();
-    } else if (winner === javascript) {
-      $("#javascript").show();
-    } else if (winner === objectiveC) {
-      $("#objectiveC").show();
-    } else if (winner === php) {
-      $("#php").show();
-    } else if (winner === python) {
-      $("#python").show();
-    } else if (winner === ruby) {
-      $("#ruby").show();
+    if (!q1Input || !q2Input || !q3Input || !q4Input || !q5Input || !q6Input || !q7Input || !q8Input || !q9Input || !q10Input || !q11Input || !q12Input) {
+      alert("Please answer all the questions")
+    } else {
+      $("small.error").hide();
+      if (winner === c) {
+        $("#c").show();
+      } else if (winner === cplus) {
+        $("#cplus").show();
+      } else if (winner === csharp) {
+        $("#csharp").show();
+      } else if (winner === java) {
+        $("#java").show();
+      } else if (winner === javascript) {
+        $("#javascript").show();
+      } else if (winner === objectiveC) {
+        $("#objectiveC").show();
+      } else if (winner === php) {
+        $("#php").show();
+      } else if (winner === python) {
+        $("#python").show();
+      } else if (winner === ruby) {
+        $("#ruby").show();
+      }
     }
   });
 
