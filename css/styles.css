@@ -48,6 +48,17 @@ form {
 
 .results {
   display: none;
+  margin-top: 20px;
+}
+
+.dayMode > .container > .results {
+  background-color: lightblue;
+  border: 3px solid darkgoldenrod;
+}
+
+.nightMode > .container > .results {
+  background-color: darkblue;
+  border: 3px solid yellow;
 }
 
 .results > .col-lg-6 > img {
