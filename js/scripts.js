@@ -223,9 +223,17 @@ $(document).ready(function() {
     if ($("body").attr('class') === 'dayMode') {
       $("body").removeClass("dayMode");
       $("body").addClass("nightMode");
+      $(".btn").removeClass("btn-info");
+      $(".btn").addClass("btn-warning");
+      $("form").removeClass("formDay");
+      $("form").addClass("formNight");
     } else {
       $("body").removeClass("nightMode");
       $("body").addClass("dayMode");
+      $(".btn").removeClass("btn-warning");
+      $(".btn").addClass("btn-info");
+      $("form").removeClass("formNight");
+      $("form").addClass("formDay");
     }
   })
 })

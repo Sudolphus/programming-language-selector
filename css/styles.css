@@ -2,6 +2,20 @@
   float: right;
 }
 
+form {
+  padding: 3px;
+}
+
+.formDay {
+  background-color: lightblue;
+  border: 3px solid darkgoldenrod;
+}
+
+.formNight {
+  background-color: darkblue;
+  border: 3px solid yellow;
+}
+
 .dayMode {
   background-color: silver;
   color: black;
@@ -29,6 +43,7 @@
 
 .button-box {
   text-align: center;
+  margin-top: 10px;
 }
 
 .results {
