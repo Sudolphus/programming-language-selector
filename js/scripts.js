@@ -12,48 +12,59 @@ $(document).ready(function() {
     let ruby = 0;
     const q1Input = parseInt($("input[name='q1']:checked").val());
     const q2Input = parseInt($("input[name='q2']:checked").val());
+    const q3Input = parseInt($("input[name='q3']:checked").val());
 
     if (q1Input === 1) {
-      c += 3;
+      cplus += 1;
       csharp += 3;
-      java += 3;
-      javascript += 3;
-      objectiveC += 3;
+      java += 6;
+      javascript += 2;
+      objectiveC += 2;
+      php += 1;
       python += 3;
+      ruby += 1;
     } else if (q1Input === 2) {
-      c += 3;
-      cplus += 3;
-      csharp += 3;
-      java += 3;
-      javascript += 3;
-      objectiveC += 3;
-      php += 3;
+      c += 1;
+      cplus += 2;
+      csharp += 1;
+      java += 4;
+      javascript += 1;
+      objectiveC += 1;
+      php += 1;
       python += 3;
-      ruby += 3;
+      ruby += 1;
     } else if (q1Input === 3) {
-      python += 3;
+      python += 1
     };
 
-    if (q2Input === 1) {
-      c += 2;
-      cplus += 2;
-      java += 2;
-      javascript += 2;
+    if (q2Input === 1) { 
+      cplus += 3;
+      csharp += 1;
+      java += 6;
+      javascript += 1;
       objectiveC += 2;
-      php += 2;
       python += 2;
-      ruby += 2;
     } else if (q2Input === 2) {
-      cplus += 2;
-      csharp += 2;
-      java += 2;
-      javascript += 2;
-      objectiveC += 2;
-      php += 2;
-      python += 2;
-      ruby += 2;
+      cplus += 1;
+      csharp += 1;
+      java += 3;
+      javascript += 1;
+      objectiveC += 1;
+      php += 1;
+      python += 1;
+      ruby += 1;
     }
 
-    
+    if (q3Input === 1) {
+      c += 
+      cplus += 
+      csharp += 
+      java += 
+      javascript += 
+      objectiveC += 
+      php += 
+      python += 
+      ruby += 
+    }
   });
 })
