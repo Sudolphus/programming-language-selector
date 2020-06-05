@@ -163,6 +163,15 @@ $(document).ready(function() {
     }
     
     const winner = maximum(c, cplus, csharp, java, javascript, objectiveC, php, python, ruby)
+    $("#c").hide();
+    $("#cplus").hide();
+    $("#csharp").hide();
+    $("#java").hide();
+    $("#javascript").hide();
+    $("#objectiveC").hide();
+    $("#php").hide();
+    $("#python").hide();
+    $("#ruby").hide();
     if (winner === c) {
       $("#c").show();
     } else if (winner === cplus) {
@@ -183,6 +192,18 @@ $(document).ready(function() {
       $("#ruby").show();
     }
   });
+
+  $("button#reset").click(function() {
+    $("#c").hide();
+    $("#cplus").hide();
+    $("#csharp").hide();
+    $("#java").hide();
+    $("#javascript").hide();
+    $("#objectiveC").hide();
+    $("#php").hide();
+    $("#python").hide();
+    $("#ruby").hide();
+  })
 })
 
 function maximum(a, b, c, d, e, f, g, h, i) {
