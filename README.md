@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Programming Language Selector_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A programming language quiz, 06.05.2020_
 
 #### By _**Micheal Hansen**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is a quiz with internal logic that helps a person determine which programming language they should learn_
 
 ## Setup/Installation Requirements
 
@@ -20,8 +20,8 @@ Open by downloading:
 
 Open via Bash/GitBash:
 1. Clone this repository onto your computer:
-`git clone {PUT_REPO_HERE}`
-2. Navigate into the `{NAME_OF_DIRECTORY}` directory in Visual Studio Code or preferred text editor
+`git clone https://github.com/Sudolphus/programming-language-selector`
+2. Navigate into the `programming-language-selector` directory in Visual Studio Code or preferred text editor
 `code .`
 3. Open index.html in Chrome or preferred browser:
 `open index.html`
@@ -31,7 +31,7 @@ Open via Bash/GitBash:
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_None currently known_
 
 ## Support and contact details
 
