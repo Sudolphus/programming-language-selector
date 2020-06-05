@@ -6,24 +6,24 @@ form {
   padding: 3px;
 }
 
-.formDay {
-  background-color: lightblue;
-  border: 3px solid darkgoldenrod;
-}
-
-.formNight {
-  background-color: darkblue;
-  border: 3px solid yellow;
-}
-
 .dayMode {
   background-color: silver;
   color: black;
 }
 
+.dayMode > .container > form {
+  background-color: lightblue;
+  border: 3px solid darkgoldenrod;
+}
+
 .nightMode {
   background-color: black;
   color: white;
+}
+
+.nightMode > .container > form {
+  background-color: darkblue;
+  border: 3px solid yellow;
 }
 
 .error {
