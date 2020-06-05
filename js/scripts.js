@@ -217,6 +217,16 @@ $(document).ready(function() {
   $("button#reset").click(function() {
     $("div.results").hide();
     $("small.error").hide();
+  });
+
+  $("button#dayNight").click(function() {
+    if ($("body").attr('class') === 'dayMode') {
+      $("body").removeClass("dayMode");
+      $("body").addClass("nightMode");
+    } else {
+      $("body").removeClass("nightMode");
+      $("body").addClass("dayMode");
+    }
   })
 })
 

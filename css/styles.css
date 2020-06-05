@@ -1,5 +1,15 @@
-body {
+#dayNight {
+  float: right;
+}
+
+.day-mode {
   background-color: silver;
+  color: black;
+}
+
+.night-mode {
+  background-color: black;
+  color: white;
 }
 
 .error {
