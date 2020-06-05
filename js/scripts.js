@@ -14,6 +14,7 @@ $(document).ready(function() {
     const q2Input = parseInt($("input[name='q2']:checked").val());
     const q3Input = parseInt($("input[name='q3']:checked").val());
     const q4Input = parseInt($("input[name='q4']:checked").val());
+    const q5Input = parseInt($("input[name='q5']:checked").val());
 
     if (q1Input === 1) {
       cplus += 1;
@@ -84,5 +85,16 @@ $(document).ready(function() {
       python += 1;
     }
 
+    if (q5Input === 1) {
+      javascript += 1;
+    } else if (q5Input === 2) {
+      csharp += 1;
+      javascript += 1;
+      php += 1;
+      python += 3;
+      ruby += 1;
+    }
+
+    
   });
 })
