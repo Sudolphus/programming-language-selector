@@ -22,7 +22,7 @@ $(document).ready(function() {
     const q10Input = parseInt($("input[name='q10']:checked").val());
     const q11Input = parseInt($("input[name='q11']:checked").val());
     const q12Input = parseInt($("input[name='q12']:checked").val());
-
+    
     if (q1Input === 1) {
       cplus += 1;
       csharp += 3;
@@ -161,5 +161,6 @@ $(document).ready(function() {
     } else if (q12Input === 3) {
       php += 1;
     }
+    
   });
 })

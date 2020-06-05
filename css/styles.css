@@ -15,3 +15,18 @@ body {
 .button-box {
   text-align: center;
 }
+
+.results {
+  border: 2px solid black;
+}
+
+.results .col-lg-6 > img {
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+
+.results > .col-lg-6 > p {
+  font-size: 50px;
+  margin-top: 125px;
+}
