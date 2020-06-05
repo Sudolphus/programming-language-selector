@@ -36,7 +36,7 @@ $(document).ready(function() {
       ruby += 1;
     } else if (q1Input === 5 || q1Input === 6) {
       python += 1
-    };
+    }
 
     if (q2Input === 1) { 
       cplus += 3;
