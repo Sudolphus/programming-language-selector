@@ -13,6 +13,7 @@ $(document).ready(function() {
     const q1Input = parseInt($("input[name='q1']:checked").val());
     const q2Input = parseInt($("input[name='q2']:checked").val());
     const q3Input = parseInt($("input[name='q3']:checked").val());
+    const q4Input = parseInt($("input[name='q4']:checked").val());
 
     if (q1Input === 1) {
       cplus += 1;
@@ -23,7 +24,7 @@ $(document).ready(function() {
       php += 1;
       python += 3;
       ruby += 1;
-    } else if (q1Input === 2) {
+    } else if (q1Input === 2 || q1Input === 3 || q1Input === 4) {
       c += 1;
       cplus += 2;
       csharp += 1;
@@ -33,7 +34,7 @@ $(document).ready(function() {
       php += 1;
       python += 3;
       ruby += 1;
-    } else if (q1Input === 3) {
+    } else if (q1Input === 5 || q1Input === 6) {
       python += 1
     };
 
@@ -75,6 +76,13 @@ $(document).ready(function() {
       java +=1;
     }
 
+    if (q4Input === 1) {
+      csharp += 1;
+    } else if (q4Input === 2) {
+      objectiveC += 1;
+    } else if (q4Input === 3 || q4Input === 4) {
+      python += 1;
+    }
 
   });
 })
