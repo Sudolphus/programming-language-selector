@@ -187,15 +187,7 @@ $(document).ready(function() {
     }
     
     const winner = maximum(c, cplus, csharp, java, javascript, objectiveC, php, python, ruby)
-    $("#c").hide();
-    $("#cplus").hide();
-    $("#csharp").hide();
-    $("#java").hide();
-    $("#javascript").hide();
-    $("#objectiveC").hide();
-    $("#php").hide();
-    $("#python").hide();
-    $("#ruby").hide();
+    $("div.results").hide();
     if (!q1Input || !q2Input || !q3Input || !q4Input || !q5Input || !q6Input || !q7Input || !q8Input || !q9Input || !q10Input || !q11Input || !q12Input) {
       alert("Please answer all the questions")
     } else {
@@ -223,15 +215,8 @@ $(document).ready(function() {
   });
 
   $("button#reset").click(function() {
-    $("#c").hide();
-    $("#cplus").hide();
-    $("#csharp").hide();
-    $("#java").hide();
-    $("#javascript").hide();
-    $("#objectiveC").hide();
-    $("#php").hide();
-    $("#python").hide();
-    $("#ruby").hide();
+    $("div.results").hide();
+    $("small.error").hide();
   })
 })
 
