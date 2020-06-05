@@ -162,5 +162,54 @@ $(document).ready(function() {
       php += 1;
     }
     
+    const winner = maximum(c, cplus, csharp, java, javascript, objectiveC, php, python, ruby)
+    if (winner === c) {
+      $("#c").show();
+    } else if (winner === cplus) {
+      $("#cplus").show();
+    } else if (winner === csharp) {
+      $("#csharp").show();
+    } else if (winner === java) {
+      $("#java").show();
+    } else if (winner === javascript) {
+      $("#javascript").show();
+    } else if (winner === objectiveC) {
+      $("#objectiveC").show();
+    } else if (winner === php) {
+      $("#php").show();
+    } else if (winner === python) {
+      $("#python").show();
+    } else if (winner === ruby) {
+      $("#ruby").show();
+    }
   });
 })
+
+function maximum(a, b, c, d, e, f, g, h, i) {
+  let x = a;
+  if (b > x) {
+    x = b;
+  }
+  if (c > x) {
+    x = c;
+  }
+  if (d > x) {
+    x = d;
+  }
+  if (e > x) {
+    x = e;
+  }
+  if (f > x) {
+    x = f;
+  }
+  if (g > x) {
+    x = g;
+  }
+  if (h > x) {
+    x = h;
+  }
+  if (i > x) {
+    x = i;
+  }
+  return x;
+}

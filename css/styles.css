@@ -17,10 +17,10 @@ body {
 }
 
 .results {
-  border: 2px solid black;
+  display: none;
 }
 
-.results .col-lg-6 > img {
+.results > .col-lg-6 > img {
   height: 300px;
   width: 300px;
   float: left;
