@@ -2,12 +2,12 @@
   float: right;
 }
 
-.day-mode {
+.dayMode {
   background-color: silver;
   color: black;
 }
 
-.night-mode {
+.nightMode {
   background-color: black;
   color: white;
 }
